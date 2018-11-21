@@ -1,0 +1,6 @@
+.*
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.zip
+lambda/*/package
