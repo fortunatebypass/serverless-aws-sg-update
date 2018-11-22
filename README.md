@@ -41,7 +41,11 @@ But for those who which to jump straight in the lake without looking:
 ```
 ./deploy.sh
 ```
-4. Cleanup and wipe all traces (yes at the prompt)
+4. Test by calling the API Gateway provided as "base_url", should return "Update Complete!"
+```
+curl https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/test;
+```
+5. Cleanup and wipe all traces (yes at the prompt)
 ```
 ./destroy.sh
 ```
