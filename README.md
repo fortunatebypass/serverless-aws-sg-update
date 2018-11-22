@@ -17,7 +17,7 @@ Due to time contraints, the below are not implemented here
 * [Requirements](#requirements)
 * [Just deploy it already (TL;DR)](#just-deploy-it-already-tldr)
 * [Design](#design)
-  * [git_hooks](#git-hooks)
+  * [git_hooks](#git_hooks)
   * [General Concept](#general-concept)
 
 ## Requirements
