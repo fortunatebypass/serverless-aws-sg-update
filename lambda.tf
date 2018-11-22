@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_lambda_function" "example" {
   function_name = "ServerlessExample"
 
-  filename = "lambda/lambda.zip"
+  filename = "lambda/git_hooks/lambda.zip"
 
   handler = "lambda.lambda_handler"
   runtime = "python3.6"

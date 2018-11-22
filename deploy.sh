@@ -17,7 +17,7 @@ then
 fi
 
 # ensure build is already complete
-if [ ! -f lambda/lambda.zip ];
+if [ ! -f lambda/git_hooks/lambda.zip ];
 then
   echo "Error: unable to locate lambda/lambda.zip - please run 'build.sh' first";
   exit 1;
