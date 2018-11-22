@@ -18,7 +18,7 @@ Due to time contraints, the below are not implemented here
 * [Just deploy it already (TL;DR)](#just-deploy-it-already-tldr)
 * [Design](#design)
   * [git_hooks](#git_hooks)
-  * [General Concept](#general-concept)
+  * [developers_ips](#developers_ips)
 
 ## Requirements
 
@@ -67,13 +67,13 @@ curl https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/test
 +--------------------+
 ```
 
-#### General Concept
+**General Concept**
 
 The above design for this project based around the concept of efficiency and automation. For this reason we've chosen to deploy everything with Terraform and keep work and maintenance to a minimum by using AWS Lambda and API Gateway.
 
 This could have been solved with EC2 instances and other code, but would require significantly more work to lock down, cost a lot more to run, and have many more parts to maintain.
 
-*Downsides?*
+**Downsides?**
 
 I'd not used much Python and never API Gateway or Lambdas before this - this will be a bit rough and not production ready.
 
@@ -83,8 +83,7 @@ Much of the code here is based on the Terraform examples and an example python l
 
 Not implemented, only proposed.
 
-#### Proposed Concept
-
+**Proposed Concept**
 ```
 +--------------------+     +--------------------+     +----------+     +----------------------+
 |  Slack Webhook     | --> |  API Gateway       | --> |  Lambda  | --> |  AWS Security Group  |
