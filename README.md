@@ -25,6 +25,7 @@ Due to time contraints, the below are not implemented here
 * Hashicorp's Terraform - https://www.terraform.io/downloads.html (tested with 0.11.10)
 * zip command line tool
 * python3 and pip
+* curl (or a browser)
 * AWS Account (with keys in ENV vars or `~/.aws/credentials`), with the ability to create public EC2 SGs, API Gateways and Lambdas in the us-east-1 region
 
 ## Just deploy it already (TL;DR)
@@ -42,8 +43,9 @@ But for those who which to jump straight in the lake without looking:
 ./deploy.sh
 ```
 4. Test by calling the API Gateway provided as "base_url", should return "Update Complete!"
+E.g.:
 ```
-curl https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/test;
+curl https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/test
 ```
 5. Cleanup and wipe all traces (yes at the prompt)
 ```
