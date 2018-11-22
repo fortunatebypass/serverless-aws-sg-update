@@ -1,4 +1,4 @@
-# Example Sinatra App Deployinator
+# Example AWS Security Group updates via Lambda
 
 ## The goal
 
