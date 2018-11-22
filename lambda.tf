@@ -5,9 +5,7 @@ provider "aws" {
 resource "aws_lambda_function" "example" {
   function_name = "ServerlessExample"
 
-  # The bucket name as created earlier with "aws s3api create-bucket"
-  s3_bucket = "terraform-serverless-example77"
-  s3_key    = "v1.0.0/lambda.zip"
+  filename = "lambda/lambda.zip"
 
   handler = "lambda.lambda_handler"
   runtime = "python3.6"
