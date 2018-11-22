@@ -78,3 +78,16 @@ This could have been solved with EC2 instances and other code, but would require
 I'd not used much Python and never API Gateway or Lambdas before this - this will be a bit rough and not production ready.
 
 Much of the code here is based on the Terraform examples and an example python lambda [here](https://blog.eq8.eu/til/configure-aws-lambda-to-alter-security-groups.html).
+
+### developers_ips
+
+Not implemented, only proposed.
+
+#### Proposed Concept
+
+```
++--------------------+     +--------------------+     +----------+     +----------------------+
+|  Slack Webhook     | --> |  API Gateway       | --> |  Lambda  | --> |  AWS Security Group  |
+|  /addip x.x.x.x    |     |  /slack            |     +----------+     +----------------------+
++--------------------+     +--------------------+
+```
